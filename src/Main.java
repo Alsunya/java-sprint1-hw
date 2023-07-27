@@ -8,14 +8,14 @@ public class Main {
         StepTracker stepTracker = new StepTracker(scanner);
         while (true) {
             printMenu();
-            int i = scanner.nextInt();
-            if (i == 1) {
+            int menuItem = scanner.nextInt();
+            if (menuItem == 1) {
                 stepTracker.addNewNumberStepsPerDay();
-            } else if (i == 2) {
+            } else if (menuItem == 2) {
                 stepTracker.changeStepGoal();
-            } else if (i == 3) {
+            } else if (menuItem == 3) {
                 stepTracker.printStatistic();
-            } else if (i == 0) {
+            } else if (menuItem == 0) {
                 System.out.println("Пока!");
                 scanner.close();
                 return;
